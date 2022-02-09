@@ -9,10 +9,13 @@ Develop a basic understanding of risk analytics in banking and financial service
 #General Information
 
 #Problem Statement
+
 Introduction
+
 Solving this assignment will give you an idea about how real business problems are solved using EDA. In this case study, apart from applying the techniques you have learnt in EDA, you will also develop a basic understanding of risk analytics in banking and financial services and understand how data is used to minimise the risk of losing money while lending to customers.
 
 Business Understanding
+
 You work for a consumer finance company which specialises in lending various types of loans to urban customers. When the company receives a loan application, the company has to make a decision for loan approval based on the applicant’s profile. Two types of risks are associated with the bank’s decision:
 
 If the applicant is likely to repay the loan, then not approving the loan results in a loss of business to the company
@@ -40,6 +43,7 @@ Charged-off: Applicant has not paid the instalments in due time for a long perio
 Loan rejected: The company had rejected the loan (because the candidate does not meet their requirements etc.). Since the loan was rejected, there is no transactional history of those applicants with the company and so this data is not available with the company (and thus in this dataset)
 
 Business Objectives
+
 This company is the largest online loan marketplace, facilitating personal loans, business loans, and financing of medical procedures. Borrowers can easily access lower interest rate loans through a fast online interface. 
 
  
@@ -58,6 +62,7 @@ In other words, the company wants to understand the driving factors (or driver v
 To develop your understanding of the domain, you are advised to independently research a little about risk analytics (understanding the types of variables and their significance should be enough).
 
 #Technologies Used
+
 1) pandas
 2) numpy
 3) matplotlib.pyplot
@@ -65,12 +70,19 @@ To develop your understanding of the domain, you are advised to independently re
 5) warnings
 
 #Conclusions
+
 The following are the variables that has considerable impact on the repayment of the loan
 
 grade ---> particularly starting from D has higher default rate
+
 sub_grade ---> particularly starting from D2 has higher default rate
+
 int_rate ---> higher the interest rate, higher default rate
+
 term ---> people opting for 60 months has higher default rate
+
 purpose ---> particularly small_business has higher default rate
+
 pub_rec ---> having derogatory public record significantly increases the chances of defaulting
+
 pub_rec_bankruptcies ---> having public record bankruptcies significantly increases the chances of defaulting
